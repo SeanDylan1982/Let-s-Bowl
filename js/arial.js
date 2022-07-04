@@ -2,11 +2,11 @@
  * The following copyright notice may not be removed under any circumstances.
  * 
  * Copyright:
- * Typeface © The Monotype Corporation plc. Data © The Monotype Corporation
+ * Typeface ï¿½ The Monotype Corporation plc. Data ï¿½ The Monotype Corporation
  * plc/Type Solutions Inc. 1990-1992. All Rights Reserved
  * 
  * Trademark:
- * Arial® Trademark of The Monotype Corporation plc registered in the US Pat & TM
+ * Arialï¿½ Trademark of The Monotype Corporation plc registered in the US Pat & TM
  * Off. and elsewhere.
  * 
  * Description:
@@ -36,11 +36,11 @@ Cufon.registerFont({"w":200,"face":{"font-family":"Arial, Helvetica, sans-serif"
  * The following copyright notice may not be removed under any circumstances.
  * 
  * Copyright:
- * Typeface © The Monotype Corporation plc. Data © The Monotype Corporation
+ * Typeface ï¿½ The Monotype Corporation plc. Data ï¿½ The Monotype Corporation
  * plc/Type Solutions Inc. 1990-1992. All Rights Reserved
  * 
  * Trademark:
- * Arial® Trademark of The Monotype Corporation plc registered in the US Pat & TM
+ * Arialï¿½ Trademark of The Monotype Corporation plc registered in the US Pat & TM
  * Off. and elsewhere.
  * 
  * Description:
