@@ -27,7 +27,7 @@ h1 {
 	margin:0;
 	padding:22px 0 0 0;
 	color:#1a1a1a;
-	font:bold 40px/1.4em Arial, Helvetica, sans-serif;
+	font:bold 40px/2em Arial, Helvetica, sans-serif;
 	letter-spacing:-2px;
 }
 h1 a, h1 a:hover {
@@ -202,7 +202,7 @@ ul.ex_menu li a:hover {
 	padding:16px 0 0 0;
 }
 .content .mainbar .comment img.userpic {
-	border:1px solid #dddddd;
+	border:1px solid #fff;
 	margin:10px 16px 0 0;
 	padding:0;
 	float:left;
@@ -219,7 +219,7 @@ ul.ex_menu li a:hover {
 .fbg img {
 	padding:4px;
 	border:1px solid #cfd2d4;
-	background-color:#f2f2f2;
+	background-color:#fff;
 }
 .fbg p, .fbg h2 {
 	color:#f2f2f2;
