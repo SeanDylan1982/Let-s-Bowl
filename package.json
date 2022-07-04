@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@types/netlify-identity-widget": "^1.9.3",
     "netlify-identity-widget": "^1.9.2"
   }
 }
