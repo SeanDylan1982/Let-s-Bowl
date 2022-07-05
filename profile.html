@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
     <title>About Us | Let's Bowl</title>
     <meta charset="UTF-8">
@@ -21,12 +21,39 @@
 
             width: 160px;
             height: 160px;
-            margin-top: -120px;
+            margin-top: -140px;
             margin-left: -700px;
             border-radius: 50%;
             border:solid 6px #f2f2f2;
         }
 
+        #pic{
+
+            margin-left:-700px;
+            margin-top: 1px;
+
+        }
+        
+        #text{
+
+            font-size: 16px;
+            text-align: center;
+            align-items: right;
+            margin-right: -220px;
+            margin-top: -55px;
+            min-width: 100px;
+
+        }
+        
+        #main{
+
+            background-color: #f2f2f2;
+            width:923px;
+            height:360px;
+            text-align: center;
+
+        }
+        
         #menu_buttons{
 
             background-color: #1add82;
@@ -51,13 +78,13 @@
 <div class="main_resize">
     <div class="header">
     <div class="logo">
-        <h1><span>Let's/</span><img src="/images/logo1.png" height="40" width="40"/><a href="#">/bowl</a></h1>
+        <h1><span>Let's/</span><img src="/images/logo1.png" height="40" width="40" alt="The website's logo" /><a href="#">/bowl</a></h1>
     </div>
     <div class="search">
         <form method="get" id="search" action="#">
         <span>
         <input type="text" placeholder="Search..." name="s" id="s" />
-        <input name="searchsubmit" type="image" src="images/search.png" value="Go" id="searchsubmit" class="btn" />
+        <input name="searchsubmit" type="image" src="images/search.png" alt="Magnifying glass for searching" value="Go" id="searchsubmit" class="btn" />
             <script>
             function myFunction() {
                 var input, filter, ul, li, a, i;
@@ -93,13 +120,13 @@
         <div class="clr"></div>
         </div>
         <!-- End of Header Section -->
-        <div id="main" style="background-color: #f2f2f2; width:923px; min-height:291px; text-align:center;" />
+        <div id="main" />
             <img src="images/header_images.png" width="923" height="291" alt="A manicured lawn bowling green"/>  
-            <img id="profile_pic" src="/images/user-image2.png">
-            <div style="margin-left: -720px;"" />User's Name</div>
+            <img id="profile_pic" src="/images/user-image2.png" alt="A generic silhouette user profile picture" >
+            <div id="pic">User's Name</div>
             <br>
         </div>
-        <div id="text" style="text-align: center; align-items: right; margin-right: -220px; margin-top: -95px; min-width: 100px;" />
+        <div id="text"/>
             <div id="menu_buttons">Timeline</div> 
             <div id="menu_buttons">About Me</div>
             <div id="menu_buttons">Friends</div>
@@ -109,9 +136,7 @@
             <br>
         </div>
     </div>
-<br>
     </div>
-<br>
 <br>
     <div class="content">
     <div class="content_bg">
