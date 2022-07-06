@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Sean Dylan Patterson">
-    <link href="/images/logo1.png" rel="icon">
-    <link href="/images/logo1.png" rel="apple-touch-icon" width="32" height="32" alt="The website's logo">
+    <link href="/images/logo1.ico" rel="icon">
+    <link href="/images/logo1.png" rel="apple-touch-icon" width="40" height="40" alt="The website's logo">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -15,25 +15,8 @@
     <script type="text/javascript" src="js/arial.js"></script>
     <script type="text/javascript" src="js/cuf_run.js"></script>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-        function myFunction() {
-            var input, filter, ul, li, a, i;
-            input = document.getElementById("search");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("searchsubmit");
-            li = ul.getElementsByTagName("li");
-        
-            for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-            }
-        }
-    </script>
     <style>
+
         #center-block{
             background-color: #f2f2f2;
             width: 600px;
@@ -73,18 +56,18 @@
 <div class="main_resize">
     <div class="header">
     <div class="logo">
-        <h1><span>let's/</span><img src="/images/logo1.png" height="40" width="40"/><a href="#">/bowl</a></h1>
+      <h1><span>Let's</span><img src="/images/logo1.png" height="40" width="40" alt="The website's logo"><a href="#">bowl</a></h1> 
     </div>
     <div class="search">
         <form method="get" id="search" action="#">
         <span>
         <input type="text" value="Search" name="s" id="s" />
-        <input name="searchsubmit" type="image" src="images/search.gif" value="Go" id="searchsubmit" class="btn" />
+        <input name="searchsubmit" type="image" src="/images/search.png" value="Go" id="searchsubmit" class="btn" />
         </span>
         </form>
         <div class="clr"></div>
     </div>
-    <div class="clr"></div>
+    <div class="clr"></div> 
     <div class="menu_nav">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -93,20 +76,22 @@
             <li><a href="contact.html">Contact Us</a></li>
             <li><div data-netlify-identity-button></div></li>
         </ul>
-        <div class="clr"></div>
+        <div class="clr"></div> 
     </div>
-    <div class="hbg"><img src="images/header_images.jpg" width="923" height="145" alt="A manicured lawn bowling green" /></div>
+    <div class="hbg"><img src="images/header_images.jpg" width="923" height="145" alt="A manicured lawn bowling green"></div>
     </div>
     <div id="center-block">
-        <h1>Login/<img src="/images/logo1.png" height="40" width="40"/><a href="#"><span>/Sign Up</span></a></h1>
+        <h1>Login<img src="/images/logo1.png" height="40" width="40" alt=""><a href="#"><span>Sign Up</span></a></h1> 
         <div class="row">
             <br> 
+            <form name="sign-up" method="post" data-netlify="true">
             <p><input id="text" type="text" name="first" placeholder="Please enter your first name..." required="true"></p>
             <p><input id="text" type="text" name="last" placeholder="Please enter your last name..." required="true"></p>
             <p><input id="text" type="email"  name="email" placeholder="Please enter your email address..." required="true"></p>
             <p><input id="text" type="password" name="password" placeholder="Please enter a password..." required="true"></p>
             <p><input id="text" type="password" name="confirm" placeholder="Please confirm your password..." required="true"></p>
-            <button id="button" type="submit" text-align="center" action="send">Sign Up</button>
+            <div data-netlify-recaptcha="true"></div> 
+            <button id="button" type="submit" text-align="center" action="send">Sign Up</button></form>
             <br><br><br>
         </div>
     </div>
@@ -127,8 +112,8 @@
             for announcements, promotions, special discounts and more. <a href="#">Have a look...</a></p>
         </div>
         <div class="col c3">
-        <form name="contact" netlify>
-            <p><label>Email <input type="email" name="email" required="true" /></label></p>
+        <form name="subscribe" data-netlify="true"> 
+            <p><label>Email <input type="email" name="email" required="true"></label></p>
             <p><button type="submit">Send</button></p> 
         </form>
         </div>
@@ -145,7 +130,7 @@
     <div class="clr"></div>
     </div>
 </div>
-<div>
-</div>
+    <div>
+    </div>
 </body>
-</html>
+</html> 

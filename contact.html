@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>About Us | Let's Bowl</title>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head> 
+    <title>Contact Us | Let's Bowl</title> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Sean Dylan Patterson">
-    <link href="/images/logo1.png" rel="icon">
-    <link href="/images/logo1.png" rel="apple-touch-icon" width="32" height="32" alt="The website's logo">
+    <link href="/images/logo1.ico" rel="icon">
+    <link href="/images/logo1.png" rel="apple-touch-icon" width="42" height="42" alt="The website's logo">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -15,160 +15,179 @@
     <script type="text/javascript" src="js/arial.js"></script>
     <script type="text/javascript" src="js/cuf_run.js"></script>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
+    <style>
+
+        #profile_pic{
+
+            width: 160px;
+            height: 160px;
+            margin-top: -140px;
+            margin-left: -670px;
+            border-radius: 50%;
+            border:solid 6px #f2f2f2;
+            padding: 1px;
+
+        }
+
+        #pic{
+
+            font-size: 20px;
+            font-weight: 200px;
+            margin-left:-670px;
+            padding: 1px;
+
+        }
+        
+        #text{
+
+            font-size: 16px;
+            text-align: center;
+            align-items: center; 
+            margin-right: -220px;
+            margin-top: -55px;
+            min-width: 100px;
+            padding: 1px;
+
+        }
+        
+        #main{
+
+            background-color: #f2f2f2;
+            width:923px;
+            min-height:340px; 
+            text-align: center;
+            padding: 1px;
+
+        }
+        
+        #menu_buttons{
+
+            background-color: rgb(17, 187, 102);
+            color: #f2f2f2; 
+            width: 90px;
+            height: 22px;
+            display: inline-block;
+            border-radius: 2px;
+            border:solid 1px #f2f2f2;  
+            margin: auto;
+            text-align: center; 
+            align-items: right;
+            padding: 4px;
+
+        }
+    </style>
+</head>
 <body>
 <div class="main">
-  <div class="main_resize">
+<div class="main_resize">
     <div class="header">
-      <div class="logo">
-        <h1><span>let's/</span><img src="/images/logo1.png" height="40" width="40"/><a href="#">/bowl</a></h1>
-      </div>
-      <div class="search">
+    <div class="logo"> 
+        <a href="#"><h1><span>Let's</span><img src="/images/logo1.png" height="40" width="40" alt="The website's logo">bowl</a></h1>
+    </div>
+    <div class="search">
         <form method="get" id="search" action="#">
-          <span>
-          <input type="text" value="Search..." name="s" id="s" />
-          <input name="searchsubmit" type="image" src="images/search.gif" value="Go" id="searchsubmit" class="btn"  />
-            <script>
-              function myFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("search");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("searchsubmit");
-                li = ul.getElementsByTagName("li");
-              
-                for (i = 0; i < li.length; i++) {
-                  a = li[i].getElementsByTagName("a")[0];
-                  if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                  } else {
-                    li[i].style.display = "none";
-                  }
-                }
-              }
-            </script>
-          </span>
+        <span> 
+        <input type="text" placeholder="Search..." name="s" id="s">
+        <input name="searchsubmit" type="image" src="images/search.png" alt="Magnifying glass for searching" value="Go" id="searchsubmit" class="btn" />
+        </span>
         </form>
         <!--/searchform -->
         <div class="clr"></div>
-      </div>
-      <div class="clr"></div>
-      <div class="menu_nav">
+    </div>
+    <div class="clr"></div>
+    <div class="menu_nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="calendar.html">Bowls Calendar</a></li>
-          <li class="active"><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><div data-netlify-identity-button></div></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html">Bowls Calendar</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><div data-netlify-identity-button></div></li>
         </ul>
         <div class="clr"></div>
-      </div>
-      <div class="hbg"><img src="images/header_images.jpg" width="923" height="291" alt="A manicured lawn bowling green" /></div>
+        </div>
+        <!-- End of Header Section -->
+        <div id="main">
+            <img src="images/header_images.png" alt="A manicured lawn bowling green">  
+            <img id="profile_pic" src="/images/user-image2.png" alt="A generic silhouette user profile picture"> 
+            <div id="pic">User's Name</div>
+            <br>
+        </div>
+        <div id="text"/>
+            <div id="menu_buttons">Timeline</div> 
+            <div id="menu_buttons">About Me</div>
+            <div id="menu_buttons">Friends</div>
+            <div id="menu_buttons">Photos</div>
+            <div id="menu_buttons">Videos</div>
+            <div id="menu_buttons">Settings</div>
+            <br>
+        </div>
     </div>
-    <div class="content">
-      <div class="content_bg">
-        <div class="mainbar">
-          <div class="article">
-            <h2><span>Contact</span></h2>
-            <div class="clr"></div>
-            <p>You can find more of my free template designs at my website. For premium commercial designs, you can check out DreamTemplate.com.</p>
-          </div>
-          <div class="article">
-            <h2><span>Send us</span> mail</h2>
-            <div class="clr"></div>
-            <form action="#" method="post" id="sendemail">
+    </div>
+<br>
+    <div id="center-contact" style="width:auto; height:auto; margin-left:360px;"> 
+      <div class="content"">  
+        <h2><span>Send us</span> mail</h2>
+          <div class="clr" align-items="center"></div>
+            <form name="contact" method="post" data-netlify="true"> 
               <ol>
-                <li>
-                  <label for="name">Name (required)</label>
-                  <input id="name" name="name" class="text" />
-                </li>
-                <li>
-                  <label for="email">Email Address (required)</label>
-                  <input id="email" name="email" class="text" />
-                </li>
-                <li>
-                  <label for="website">Website</label>
-                  <input id="website" name="website" class="text" />
-                </li>
-                <li>
-                  <label for="message">Your Message</label>
-                  <textarea id="message" name="message" rows="8" cols="50"></textarea>
-                </li>
-                <li>
-                  <input type="image" name="imageField" id="imageField" src="images/submit.gif" class="send" />
-                  <div class="clr"></div>
-                </li>
-              </ol>
-            </form>
-          </div>
-        </div>
-        <div class="sidebar">
-          <div class="gadget">
-            <h2 class="star"><span>Sidebar</span> Menu</h2>
-            <div class="clr"></div>
-            <ul class="sb_menu">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">TemplateInfo</a></li>
-              <li><a href="#">Style Demo</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Archives</a></li>
-              <li><a href="#">Web Templates</a></li>
-            </ul>
-          </div>
-          <div class="gadget">
-            <h2 class="star"><span>Sponsors</span></h2>
-            <div class="clr"></div>
-            <ul class="ex_menu">
-              <li><a href="http://www.dreamtemplate.com">DreamTemplate</a><br />
-                Over 6,000+ Premium Web Templates</li>
-              <li><a href="http://www.templatesold.com/">TemplateSOLD</a><br />
-                Premium WordPress &amp; Joomla Themes</li>
-              <li><a href="http://www.imhosted.com">ImHosted.com</a><br />
-                Affordable Web Hosting Provider</li>
-              <li><a href="http://www.myvectorstore.com">MyVectorStore</a><br />
-                Royalty Free Stock Icons</li>
-              <li><a href="http://www.evrsoft.com">Evrsoft</a><br />
-                Website Builder Software &amp; Tools</li>
-              <li><a href="http://www.csshub.com/">CSS Hub</a><br />
-                Premium CSS Templates</li>
-            </ul>
-          </div>
-          <div class="gadget">
-            <h2 class="star"><span>Wise Words</span></h2>
-            <div class="clr"></div>
-            <div class="testi">
-              <p><span class="q"><img src="images/qoute_1.gif" width="20" height="15" alt="" /></span> We can let circumstances rule us, or we can take charge and rule our lives from within. <span class="q"><img src="images/qoute_2.gif" width="20" height="15" alt="" /></span></p>
-              <p class="title"><strong>Earl Nightingale</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="clr"></div>
+              <li>
+                <label for="name">Name *</label>
+                <input id="name" name="name" class="text">
+              </li>
+              <li>
+                <label for="email">Email Address *</label>
+                <input id="email" name="email" class="text">
+              </li>
+              <li>
+                <label for="message">Your Message *</label> 
+                <textarea id="message" name="message" rows="8" cols="50"></textarea>
+              </li>
+              <div data-netlify-recaptcha="true"></div>
+              <li>
+                <input type="image" name="imageField" id="imageField" src="images/submit.png" class="send">
+                <div class="clr"></div>
+              </li>
+            </ol>
+          </form>
       </div>
     </div>
+<br>
+<div class="fbg">
+  <div class="fbg_resize">
+  <div class="col c1">
+      <h2><span>Recommended </span></h2>
+      <a href="#"><img src="images/pic_1.jpg" width="58" height="58" alt="Northmead Bowling Club Logo" /></a> <a href="#"><img src="images/pic_2.jpg" width="58" height="58" alt="Bowls SA Logo" /></a> <a href="#"><img src="images/pic_3.jpg" width="58" height="58" alt="The South African Olympic Committee Logo" /></a> <a href="#"><img src="images/pic_4.jpg" width="58" height="58" alt="The South African Department of Sports, Arts and Culture Emblem " /></a> <a href="#"><img src="images/pic_5.jpg" width="58" height="58" alt="Bowls - 1 Sport 4 Life Logo " /></a> <a href="#"><img src="images/pic_6.jpg" width="58" height="58" alt="Republic of South Africa Department of Sports, Arts and Culture words written out" /></a> </div>
+  <div class="col c2">
+      <h2><span>Joker Draws</span></h2>
+      <p>Live Joker Draw Events<br />
+      Follow along with the weekly Joker Draw for your club. What's happened so far and what's still coming up? </p>
+      <div><a href="#">The Board... </a></div>
   </div>
-  <div class="fbg">
-    <div class="fbg_resize">
-      <div class="col c1">
-        <h2><span>Image Gallery</span></h2>
-        <a href="#"><img src="images/pic_1.jpg" width="58" height="58" alt="" /></a> <a href="#"><img src="images/pic_2.jpg" width="58" height="58" alt="" /></a> <a href="#"><img src="images/pic_3.jpg" width="58" height="58" alt="" /></a> <a href="#"><img src="images/pic_4.jpg" width="58" height="58" alt="" /></a> <a href="#"><img src="images/pic_5.jpg" width="58" height="58" alt="" /></a> <a href="#"><img src="images/pic_6.jpg" width="58" height="58" alt="" /></a> </div>
-      <div class="col c2">
-        <h2><span>Lorem Ipsum</span></h2>
-        <p>Lorem ipsum dolor<br />
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. <a href="#">Morbi tincidunt, orci ac convallis aliquam</a>, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam.</p>
-      </div>
-      <div class="col c3">
-        <h2><span>About</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. llorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum. <a href="#">Learn more...</a></p>
-      </div>
-      <div class="clr"></div>
-    </div>
+  <div class="col c3">
+      <h2><span>Newsletter</span></h2>
+      <p>Subscribe to our monthly newsletter <br />
+      for announcements, promotions, special discounts and more. <a href="#">Have a look...</a></p>
   </div>
+  <div class="col c3">
+      <form name="subscribe" data-netlify="true">
+      <p><label>Email <input type="email" name="email" required="true"></label></p> 
+      <p><button type="submit">Send</button></p> 
+      </form>
+  </div>
+  <p>
+      |
+  </p>
+</div>
+</div>
 </div>
 <div class="footer">
-  <div class="footer_resize">
-    <p class="lf">&copy; Copyright <a href="#">MyWebSite</a>.</p>
-    <p class="rf">Layout by Rocket <a href="http://www.rocketwebsitetemplates.com/">Website Templates</a></p>
-    <div class="clr"></div>
-  </div>
+<div class="footer_resize">
+  <p class="lf">&copy; Copyright 2022 <a href="#">Let's Bowl</a>. All Rights Reserved. e&oe </p>
+  <p class="rf">Layout by <a href="http://www.rocketwebsitetemplates.com/"> <title>Rocket Website Templates</title> Rocket Website Templates </a></p> 
+  <div class="clr"></div>
 </div>
-<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</div>
+<div>
+</div>
+</body>
 </html>
